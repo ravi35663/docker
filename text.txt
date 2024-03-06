@@ -1,0 +1,30 @@
+//Docker
+Docker Images:
+-> Images are blueprints for the containers
+    -> Images includes:
+        -> Runtime environment
+        -> Application code
+        -> any dependencies
+        -> Extra Configuration (e.g. env variables)
+        -> Commands 
+            ..etc
+    -> Node.js, React.js, mongodb, mysql,python ..etc are images.
+
+Docker Containers:
+-> Containers are runnable instances of the Images
+-> Container can runs application
+-> Containers are also known as isolated process because they run independently to any other process
+-> That is application is run on its own box without needing anything of the system
+-> Docker is just like virtual machine
+-> when we bundle together all the images it becomes a container
+-> images are made up of several layers
+-> parent image: it is initial layer of the application which includes os or sometimes runtime env.
+-> dockerHub: online repository of docker where you can find lots of images. Just like react, node images ..etc
+-> dockerHub is like github for docker
+
+==> Commands
+-> docker pull node: used to pull node image in docker
+    if we don't provide the version of images, default it will pull latest version
+-> To Build a docker image
+    docker build -t set_image_name .
+    here .-> is relative path where Dockerfile is exists
